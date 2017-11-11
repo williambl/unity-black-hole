@@ -6,7 +6,7 @@ public class BlackHole : MonoBehaviour {
 
         public double mass;
 
-        const double G = 0.0000000006674;
+        const double G = 6.674e-11;
         const int c = 299792458;
 
 	// Use this for initialization
