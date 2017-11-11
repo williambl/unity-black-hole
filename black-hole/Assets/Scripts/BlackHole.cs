@@ -5,13 +5,18 @@ using UnityEngine;
 public class BlackHole : MonoBehaviour {
 
         public double mass;
+        public Transform hole;
 
         const double G = 6.674e-11;
         const int c = 299792458;
 
+        double radius;
+
 	// Use this for initialization
 	void Start () {
-	    Debug.Log(determine_radius(mass));
+            radius = determine_radius(mass);
+	    Debug.Log(radius);
+            hole.localScale = new Vector3((float)(2f*radius), (float)(2f*radius), (float)(2f*radius));
 	}
 	
 	// Update is called once per frame
