@@ -389,7 +389,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 933608866
+  randomSeed: -750070910
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3857,6 +3857,7 @@ GameObject:
   - component: {fileID: 2003221380}
   - component: {fileID: 2003221384}
   - component: {fileID: 2003221382}
+  - component: {fileID: 2003221381}
   m_Layer: 0
   m_Name: Lens
   m_TagString: Untagged
@@ -3872,11 +3873,23 @@ Transform:
   m_GameObject: {fileID: 2003221379}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalScale: {x: 25, y: 25, z: 1}
   m_Children: []
   m_Father: {fileID: 614267589}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2003221381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2003221379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d66f143469f54c29a5641080742bfdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1594290249}
 --- !u!23 &2003221382
 MeshRenderer:
   m_ObjectHideFlags: 0
